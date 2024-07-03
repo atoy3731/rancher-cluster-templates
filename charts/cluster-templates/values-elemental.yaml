@@ -61,6 +61,7 @@ cluster:
       write_kubeconfig_mode: 0600
       use_service_account_credentials: false
       protect_kernel_defaults: false
+      enabled_embedded_registry: false # Enable spegel embedded registry, requires registry configuration. (https://docs.k3s.io/installation/registry-mirror)
       cloud_provider_name: '' # https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/set-up-cloud-providers
       # cloud_provider_config: '' # cloud provider config secret here (example: secret://fleet-default:cloudprovider)
       # kube_controller_manager_arg:

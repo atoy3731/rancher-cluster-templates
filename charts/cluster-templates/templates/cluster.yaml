@@ -234,6 +234,9 @@ spec:
         {{- if .Values.cluster.config.globalConfig.disable_cloud_controller }}
         disable-cloud-controller: {{ .Values.cluster.config.globalConfig.disable_cloud_controller }}
         {{- end }}
+        {{- if .Values.cluster.config.globalConfig.enabled_embedded_registry }}
+        embedded-registry: true
+        {{- end }}
         {{- if .Values.cluster.config.controlPlaneConfig.disable_kube_proxy }}
         disable-kube-proxy: {{ .Values.cluster.config.controlPlaneConfig.disable_kube_proxy }}
         {{- end }}
